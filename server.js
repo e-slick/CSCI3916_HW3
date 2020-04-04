@@ -48,7 +48,7 @@ router.route('/users')
         });
     });
 
-router.post('/signup', function(req, res) {
+router.post('signup', function(req, res) {
     if (!req.body.username || !req.body.password) {
         res.json({success: false, message: 'Please pass username and password.'});
     }
@@ -72,7 +72,7 @@ router.post('/signup', function(req, res) {
     }
 });
 
-router.post('/signin', function(req, res) {
+router.post('signin', function(req, res) {
     var userNew = new User();
     userNew.username = req.body.username;
     userNew.password = req.body.password;
