@@ -16,3 +16,6 @@ var MovieSchema = new Schema({
     actorName: {type: Array, required: true},
     charName: {type: Array, required: true}
 });
+
+var Movie = mongoose.model('Movies', movieSchema);
+module.exports  = Movie;

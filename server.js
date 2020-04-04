@@ -35,7 +35,6 @@ router.route('/users/:userId')
             if (err) res.send(err);
 
             var userJson = JSON.stringify(user);
-            // return that user
             res.json(user);
         });
     });
