@@ -6,7 +6,7 @@ var User = require('./Users');
 var jwt = require('jsonwebtoken');
 var cors = require('cors');
 
-var Movie = require('./Movies')
+//var Movie = require('./Movies')
 
 var app = express();
 module.exports = app; // for testing
