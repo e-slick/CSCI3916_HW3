@@ -17,5 +17,5 @@ var MovieSchema = new Schema({
     charName: {type: Array, required: true}
 });
 
-var Movie = mongoose.model('Movies', movieSchema);
+var Movie = mongoose.model('Movies', MovieSchema);
 module.exports  = Movie;
